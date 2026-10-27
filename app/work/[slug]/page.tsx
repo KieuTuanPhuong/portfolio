@@ -49,7 +49,8 @@ export default async function WorkPage({ params }: PageProps<"/work/[slug]">) {
           <div>
             <dt className="text-sm text-muted">Role</dt>
             <dd>
-              {project.role} · team of {project.team}
+              {project.role}
+              {project.team && ` · team of ${project.team}`}
             </dd>
           </div>
         </dl>

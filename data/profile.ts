@@ -1,7 +1,5 @@
-// Vercel sets this at build time to the production domain (custom domain once added).
-export const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
-  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-  : "http://localhost:3000";
+// Hardcoded: VERCEL_PROJECT_PRODUCTION_URL resolves to the auto-generated *.vercel.app alias, not this one.
+export const siteUrl = "https://tuanphuongkieu.vercel.app";
 
 export const profile = {
   name: "Kieu Tuan Phuong",
@@ -9,7 +7,7 @@ export const profile = {
   availability:
     "Remote contract & part-time · Hanoi, GMT+7 · US and EU meeting hours OK",
   description:
-    "Senior frontend developer for remote contract and part-time work. Next.js, React, Vue and Nuxt on Python, Django and Strapi backends. Case studies from six client projects.",
+    "Senior frontend developer for remote contract and part-time work. Next.js, React, Vue and Nuxt on Python, Django and Strapi backends. Case studies from client projects in real estate, education, data and hospitality.",
   email: "phuongkieuht11@gmail.com",
   github: "https://github.com/KieuTuanPhuong",
   linkedin: "https://linkedin.com/in/tuanphuongkieu",
@@ -26,13 +24,23 @@ export const profile = {
     },
     {
       title: "Fast onboarding",
-      body: "Six client codebases in two years, in teams of 3 to 13.",
+      body: "Twelve client codebases since 2023, from solo builds to teams of 13.",
     },
   ],
   stack: [
     {
       group: "Frontend",
-      items: ["Next.js", "React.js", "Vue.js", "Nuxt.js", "Tailwind CSS"],
+      items: [
+        "Next.js",
+        "React.js",
+        "Vue.js",
+        "Nuxt.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "Vite",
+        "Storybook",
+        "shadcn/ui",
+      ],
     },
     { group: "Backend & CMS", items: ["Python", "Django", "Strapi"] },
     {
