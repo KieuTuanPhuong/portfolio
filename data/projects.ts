@@ -256,8 +256,14 @@ export const projects: Project[] = [
     ],
     outcome: "The frontend of a niche tech-industry social network.",
     images: shots("endeverous", [
+      "Home page with personalized welcome and new-project carousel",
+      "Home feed with announcement and community posts",
+      "Project page with posts, contributors and opportunities tabs",
+      "Member profile with bio, projects and posts",
+      "Question post with threaded reply",
+      "Community poll post",
+      "Endeverus AI assistant chat",
       "Sign-in screen with email and Google sign-in",
-      "Sign-up screen",
     ]),
   },
   {
