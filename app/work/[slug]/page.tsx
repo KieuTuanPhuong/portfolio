@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Logo } from "@/components/Logo";
-import { ProjectScreens, StackChips } from "@/components/ProjectCard";
+import { StackChips } from "@/components/ProjectCard";
 import { Section } from "@/components/Section";
 import { projects } from "@/data/projects";
 
@@ -77,12 +78,26 @@ export default async function WorkPage({ params }: PageProps<"/work/[slug]">) {
       </Section>
 
       <Section id="screenshots" title="Screenshots">
-        <ProjectScreens
-          project={project}
-          sizes="(min-width: 768px) 736px, 100vw"
-        />
-        {project.images.length === 0 && (
-          <p className="mt-4 text-muted">Screenshots available on request.</p>
+        {project.images.length > 0 ? (
+          <div className="space-y-10">
+            {project.images.map((img) => (
+              <figure key={img.src}>
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  width={img.width}
+                  height={img.height}
+                  sizes="(min-width: 768px) 736px, 100vw"
+                  className="w-full rounded-lg border border-line"
+                />
+                <figcaption className="mt-3 text-sm text-muted">
+                  {img.alt}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        ) : (
+          <p className="text-muted">Screenshots available on request.</p>
         )}
       </Section>
 
