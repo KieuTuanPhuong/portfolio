@@ -27,25 +27,31 @@ export const profile = {
       body: "Twelve client codebases since 2023, from solo builds to teams of 13.",
     },
   ],
+  // Only tools used in the projects above, the CV, or the base-next starter.
   stack: [
     {
       group: "Frontend",
-      items: [
-        "Next.js",
-        "React.js",
-        "Vue.js",
-        "Nuxt.js",
-        "Tailwind CSS",
-        "TypeScript",
-        "Vite",
-        "Storybook",
-        "shadcn/ui",
-      ],
+      items: ["Next.js", "React.js", "Vue.js", "Nuxt.js", "TypeScript", "Vite"],
     },
-    { group: "Backend & CMS", items: ["Python", "Django", "Strapi"] },
     {
-      group: "Tooling",
-      items: ["Git", "AI model integration", "UI/UX design", "SEO landing pages"],
+      group: "UI & design systems",
+      items: ["Tailwind CSS", "shadcn/ui", "Radix UI", "Storybook", "UI/UX design"],
+    },
+    {
+      group: "Data, forms & i18n",
+      items: ["TanStack Query", "Zustand", "React Hook Form", "Zod", "Orval", "next-intl"],
+    },
+    {
+      group: "Backend & CMS",
+      items: ["Python", "Django", "django CMS", "Strapi"],
+    },
+    {
+      group: "Testing & tooling",
+      items: ["Jest", "Vitest", "Playwright", "Husky", "Git"],
+    },
+    {
+      group: "Also",
+      items: ["AI model integration", "SEO landing pages", "Flutter (learning)"],
     },
   ],
 };

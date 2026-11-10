@@ -129,11 +129,10 @@ export const projects: Project[] = [
     outcome:
       "Four portals developed and interconnected against a Go backend.",
     images: shots("vietnam-data", [
-      "Data exchange home page with data search",
-      "Data catalogue by category and popular data products",
-      "Auction portal: list of auction plans",
-      "Auction portal: auction results with status and winning bids",
-      "Administration portal sign-in screen",
+      "Data exchange home page, signed in, with data search",
+      "Data product registration form on the exchange",
+      "Merchant portal dashboard: products by type, contracts and revenue",
+      "Auction portal: published auction list with starting prices",
     ]),
   },
   {
