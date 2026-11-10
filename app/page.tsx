@@ -1,4 +1,4 @@
-import { ProjectCard } from "@/components/ProjectCard";
+import { ProjectCard, StackChips } from "@/components/ProjectCard";
 import { Section } from "@/components/Section";
 import { profile } from "@/data/profile";
 import { projects } from "@/data/projects";
@@ -52,6 +52,19 @@ export default function Home() {
         </ul>
       </Section>
 
+      <Section id="stack" title="Tech stack">
+        <dl className="grid gap-6 sm:grid-cols-2">
+          {profile.stack.map(({ group, items }) => (
+            <div key={group}>
+              <dt className="font-semibold">{group}</dt>
+              <dd className="mt-2">
+                <StackChips stack={items} />
+              </dd>
+            </div>
+          ))}
+        </dl>
+      </Section>
+
       <Section id="how" title="How I work">
         <ul className="space-y-5">
           {profile.howIWork.map((item) => (
@@ -61,17 +74,6 @@ export default function Home() {
             </li>
           ))}
         </ul>
-      </Section>
-
-      <Section id="stack" title="Stack">
-        <dl className="grid gap-5 sm:grid-cols-3">
-          {profile.stack.map(({ group, items }) => (
-            <div key={group}>
-              <dt className="font-semibold">{group}</dt>
-              <dd className="mt-1 text-muted">{items.join(", ")}</dd>
-            </div>
-          ))}
-        </dl>
       </Section>
 
       <Section id="contact" title="Contact">
