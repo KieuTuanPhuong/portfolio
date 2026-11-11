@@ -52,7 +52,12 @@ export const projects: Project[] = [
       "Home page section with featured projects and property categories",
       "Storybook story for the project detail product carousel",
       "Storybook docs page for the Avatar component",
-      "ERP sign-in screen",
+      "Micro-frontend host shell with the ERP module: C&B approval dashboard",
+      "CMS admin sales dashboard with commission figures and revenue trend",
+      "CMS admin project management grid",
+      "CMS admin lead management table with status badges",
+      "CRM module inside the host shell: SLA monitor with automatic lead recall",
+      "CRM module inside the host shell: round-robin lead routing rules",
     ]),
   },
   {
