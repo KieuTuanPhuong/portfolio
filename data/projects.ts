@@ -299,6 +299,35 @@ export const projects: Project[] = [
     // TODO: add the Western Sydney Piano School live site link
   },
   {
+    slug: "coco-qr-checkin",
+    name: "CÔCÔ QR Check-in",
+    period: "Nov 2023 – Dec 2023",
+    client: "Freelance client in Germany (restaurant group)",
+    role: "Frontend Developer",
+    team: "3",
+    stack: ["React.js", "Tailwind CSS", "Bootstrap"],
+    summary:
+      "Admin portal for a German restaurant group to manage staff, shifts, QR check-in attendance and salaries.",
+    problem:
+      "A restaurant owner in Germany needed one place to manage the employees across their restaurants: who works which shift, QR check-in attendance, day-off requests and monthly salaries.",
+    built: [
+      "Set up the React project, routing, ESLint and Prettier, plus the base layout and sidebar navigation",
+      "Login with role selection (Admin, Inhaber/owner, Manager, Employee) and role-based route guards",
+      "Admin views for employees, restaurant departments, shifts, day-off requests and salary summaries, built with the team",
+      "Reviewed and merged the team's pull requests",
+    ],
+    outcome:
+      "Delivered the admin frontend for the restaurant group's QR check-in and staff management system.",
+    images: shots("coco-qr-checkin", [
+      "Dashboard listing employees working today with shift codes and times",
+      "Employee list with role, restaurant, position and status",
+      "Employee profile with personal details and assigned restaurant",
+      "Shift management with shift codes and time slots",
+      "Day-off request list with approval status",
+      "Monthly salary summary with hours, overtime and pay parameters",
+    ]),
+  },
+  {
     slug: "luxe-paradise",
     name: "Luxe Paradise Hospitality",
     period: "2023",
