@@ -109,7 +109,13 @@ export const projects: Project[] = [
     images: shots("parrot-ai", [
       "AI Learning Parrot landing page",
       "Learning features: reading, speaking, writing and listening practice",
-      "Teacher portal sign-in screen",
+      "Student home with star level progress and Parrot's study tips",
+      "Student exercises: unit progress map with stars earned per skill",
+      "Student report with average score, class and grade rank, and six skill scores",
+      "AI Talk speaking practice topics with minutes practised",
+      "Teacher dashboard with quick actions and class overview cards",
+      "Teacher class list with daily learning time, completion rate and average score",
+      "School administrator dashboard with pupil totals and average score by grade",
     ]),
   },
   {
@@ -238,9 +244,12 @@ export const projects: Project[] = [
     outcome:
       "The estimate visualisation frontend of a US construction estimation SaaS.",
     images: shots("pirc-ai", [
-      "Onboarding screen with customer testimonials",
-      "Sign-up form",
-      "Sign-in screen",
+      "Estimates dashboard with project cards, totals and statuses",
+      "AI Estimator chat turning a kitchen remodel brief into a priced estimate",
+      "Estimate breakdown by category and line item beside the chat, with version revert",
+      "Proposal tracking with client details, itemised estimate and change requests",
+      "Customers list with customer detail drawer",
+      "Estimate settings with per-trade presets",
     ]),
   },
   {
@@ -272,31 +281,95 @@ export const projects: Project[] = [
     ]),
   },
   {
-    slug: "vietplastic-wsps",
-    name: "Vietplastic & Western Sydney Piano School",
-    period: "Jan 2026 – Mar 2026",
-    client: "Two client websites",
+    slug: "eir",
+    name: "EIR",
+    period: "Apr 2024 – May 2024",
+    client: "Glinteco client (Japanese medical tourism group)",
     role: "Full-Stack Developer",
-    team: "4 per project (2 developers, 2 designers)",
+    stack: ["PHP", "ThinkPHP", "Python", "ChatGPT API"],
+    summary:
+      "Multilingual site for a Japanese medical group bringing Vietnamese and Chinese patients to Japan for treatment.",
+    problem:
+      "EIR, a Japanese medical coordination group, needed its site in Vietnamese, Japanese and Chinese to reach patients abroad, with doctors, partner hospitals and staff presented for each market.",
+    built: [
+      "Vietnamese, Japanese and Chinese translations of the home, about, contact, doctor and staff pages, plus the language switcher",
+      "Python script that auto-translates selected database table columns with the ChatGPT API, skipping text already translated",
+      "New header, theme colours, buttons and carousel styling",
+      "Staff listed by country, backed by a new country field in the staff table",
+      "EIR explainer section and the media page",
+    ],
+    outcome:
+      "Live at jmcg-eir.co.jp, with Japanese and Chinese versions on their own subdomains.",
+    images: shots("eir", [
+      "Vietnamese home page with hero slider and language switcher",
+      "Chinese version of the home page",
+      "EIR explainer section with intro video",
+      "Medical tourism and health check-up services",
+      "Partner doctors and partner hospitals carousels",
+      "Expert seminar videos on Japanese advanced medical care",
+    ]),
+    links: [{ label: "jmcg-eir.co.jp", href: "https://jmcg-eir.co.jp/" }],
+  },
+  {
+    slug: "vietplastic",
+    name: "Vietplastic",
+    period: "Jan 2026 – Mar 2026",
+    client: "Glinteco client (plastic packaging manufacturer)",
+    role: "Full-Stack Developer",
+    team: "4 (2 developers, 2 designers)",
     stack: ["Next.js", "Strapi"],
     summary:
-      "Two client websites delivered end to end: Next.js frontend, Strapi CMS.",
+      "Company website for a plastic packaging manufacturer, delivered end to end: Next.js frontend, Strapi CMS.",
     problem:
-      "Two businesses needed websites whose content could be managed in a CMS.",
+      "A Vietnamese plastic packaging manufacturer needed a website for its products and news, with content managed in a CMS.",
     built: [
-      "Next.js frontend for each site",
-      "Strapi CMS backend for each site",
-      "End-to-end delivery of both projects",
+      "Next.js frontend",
+      "Strapi CMS backend for products and news",
+      "End-to-end delivery from design handoff to launch",
     ],
-    outcome: "Two client websites delivered end to end.",
-    images: shots("vietplastic-wsps", [
+    outcome: "Live at vietplastic.vn.",
+    images: shots("vietplastic", [
       "VietPlastic home page hero",
       "Product categories: lids, sauce cups and cups",
       "Company award section",
       "News page",
     ]),
     links: [{ label: "vietplastic.vn", href: "https://vietplastic.vn" }],
-    // TODO: add the Western Sydney Piano School live site link
+  },
+  {
+    slug: "wsps",
+    name: "Western Sydney Piano School",
+    period: "Jan 2026 – Mar 2026",
+    client: "Glinteco client (Sydney music school)",
+    role: "Full-Stack Developer",
+    team: "4 (2 developers, 2 designers)",
+    stack: ["Next.js", "Strapi"],
+    summary:
+      "Website for a Sydney piano school, delivered end to end: Next.js frontend, Strapi CMS.",
+    problem:
+      "A Sydney piano school needed a website presenting its courses, achievements, gallery and news, with content managed in a CMS.",
+    built: [
+      "Next.js frontend",
+      "Strapi CMS backend for courses, achievements, gallery and news",
+      "End-to-end delivery from design handoff to launch",
+    ],
+    outcome: "Live at westernsydneypianoschool.com.",
+    images: shots("wsps", [
+      "Home page hero with the AMEB certificate ceremony",
+      "Principal's message",
+      "Home page highlights: HSC music, piano specialisation, AMEB examiner",
+      "Teacher training course section",
+      "Our Courses page",
+      "Achievement page hero",
+      "Gallery pictures page",
+      "News page",
+    ]),
+    links: [
+      {
+        label: "westernsydneypianoschool.com",
+        href: "https://www.westernsydneypianoschool.com/",
+      },
+    ],
   },
   {
     slug: "coco-qr-checkin",
@@ -380,28 +453,6 @@ export const projects: Project[] = [
       "Portfolio hero with John Lloyd's introduction",
       "Grid of case-study highlights",
       "Case-study highlights for Idyoma and other products",
-    ]),
-  },
-  {
-    slug: "ramp-up",
-    name: "RAMP UP",
-    period: "Jun 2026 – Jul 2026",
-    client: "Glinteco (in-house onboarding portal)",
-    role: "Code Reviewer & Intern Mentor",
-    stack: ["NestJS", "Next.js"],
-    summary:
-      "Mentored the intern team building Glinteco's engineer onboarding portal and reviewed their PRs.",
-    problem:
-      "Glinteco wanted new engineers to ramp up through clear learning tracks, GitHub PR review and measurable progress, and gave the build to an intern team.",
-    built: [
-      "Reviewed the interns' pull requests",
-      "Guided the interns on how to work",
-    ],
-    outcome:
-      "The intern team built learning tracks, exercises, GitHub PR review and progress tracking under my review.",
-    images: shots("ramp-up", [
-      "RAMP UP landing page: onboarding through learning tracks and PR review",
-      "RAMP UP sign-in screen",
     ]),
   },
 ];
