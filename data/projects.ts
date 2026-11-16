@@ -228,7 +228,7 @@ export const projects: Project[] = [
   {
     slug: "pirc-ai",
     name: "Pirc AI",
-    period: "Nov 2024 – Mar 2025",
+    period: "Nov 2024 – Oct 2025",
     client: "Glinteco client (US construction estimation SaaS)",
     role: "Frontend Developer",
     team: "4 (2 frontend, 2 backend)",
