@@ -24,7 +24,7 @@ export const profile = {
     },
     {
       title: "Fast onboarding",
-      body: "Twelve client codebases since 2023, from solo builds to teams of 13.",
+      body: "Fourteen client codebases since 2023, from solo builds to teams of 13.",
     },
   ],
   // Only tools used in the projects above, the CV, or the base-next starter.
